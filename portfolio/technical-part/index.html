@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<title>Technical Part – Johan Alberti</title>
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+
+
+<link rel="stylesheet" id="wp-block-library-css" href="http://www.johan-alberti.com/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="screenr-fonts-css" href="https://fonts.googleapis.com/css?family=Open%2BSans%3A400%2C300%2C300italic%2C400italic%2C600%2C600italic%2C700%2C700italic%7CMontserrat%3A400%2C700&subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="http://www.johan-alberti.com/wp-content/themes/screenr/assets/css/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="http://www.johan-alberti.com/wp-content/themes/screenr/assets/css/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="screenr-style-css" href="http://www.johan-alberti.com/wp-content/themes/screenr/style.css" type="text/css" media="all">
+<style id="screenr-style-inline-css" type="text/css">
+	#page-header-cover.swiper-slider.no-image .swiper-slide .overlay {
+		background-color: #515151;
+		opacity: 1;
+	}
+	
+	
+	
+	
+	
+	
+	
+		.gallery-carousel .g-item{
+		padding: 0px 10px;
+	}
+	.gallery-carousel {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.gallery-grid .g-item, .gallery-masonry .g-item .inner {
+		padding: 10px;
+	}
+	.gallery-grid, .gallery-masonry {
+		margin: -10px;
+	}
+	
+</style>
+<link rel="stylesheet" id="screenr-gallery-lightgallery-css" href="http://www.johan-alberti.com/wp-content/themes/screenr/assets/css/lightgallery.css" type="text/css" media="all">
+<script type="text/javascript" src="http://www.johan-alberti.com/wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="http://www.johan-alberti.com/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js?ver=5.3.2"></script>
+
+
+
+
+
+
+
+</head>
+
+<body class="page-template page-template-templates page-template-full-width-page page-template-templatesfull-width-page-php page page-id-78 has-site-title has-site-tagline header-layout-fixed full-width-page">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Aller au contenu</a>
+    	<header id="masthead" class="site-header sticky-header transparent" role="banner">
+		<div class="container">
+			    <div class="site-branding">
+                        <p class="site-title"><a href="http://www.johan-alberti.com/" rel="home">Johan Alberti</a></p>
+                    </div>
+    
+			<div class="header-right-wrapper">
+				<a href="#" id="nav-toggle">Menu<span></span></a>
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<ul class="nav-menu">
+						<li id="menu-item-45" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-45"><a href="http://www.johan-alberti.com">Generalities</a></li>
+<li id="menu-item-74" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="http://www.johan-alberti.com/descriptive-part/">Descriptive Part</a></li>
+<li id="menu-item-81" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-78 current_page_item menu-item-81"><a href="http://www.johan-alberti.com/technical-part/" aria-current="page">Technical Part</a></li>
+<li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="http://www.johan-alberti.com/analytical-part/">Analytical Part</a></li>
+<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="http://www.johan-alberti.com/contact/">Contact & Resume</a></li>
+					</ul>
+				</nav>
+				
+			</div>
+
+		</div>
+	</header>
+	<section id="page-header-cover" class="section-slider swiper-slider fixed has-image">
+		<div class="swiper-container" data-autoplay="0">
+			<div class="swiper-wrapper ">
+				<div class="swiper-slide slide-align-center " style="background-image: url('http://www.johan-alberti.com/wp-content/uploads/2020/01/cropped-EE-comp-BEng-ind.jpg');"><div class="swiper-slide-intro"><div class="swiper-intro-inner" style="padding-top: 7%; padding-bottom: 7%; "><h2 class="swiper-slide-heading">Technical Part</h2></div></div><div class="overlay"></div></div>			</div>
+		</div>
+	</section>
+	<div id="content" class="site-content">
+    <div id="content-inside" class="container no-sidebar">
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main" role="main">
+                
+<article id="post-78" class="post-78 page type-page status-publish hentry">
+	<div class="entry-content">
+		
+<h2><strong>List of confroted problems :</strong></h2>
+
+
+
+<figure class="wp-block-table green"><table class="has-subtle-light-gray-background-color has-background"><thead><tr><th>Name</th><th>Context</th></tr></thead><tbody><tr><td><a href="#b1">  Study of the LoRa protocol</a></td><td>Course of  Protocols for the connected objects</td></tr><tr><td><a href="#b2">  Study of the MAC layers for wireless sensor networks</a></td><td>Course of Protocols for the connected objects</td></tr><tr><td><a href="#b3"> Introduction to Software-Defined-Radio (GNU Radio)</a></td><td>Course of Digital wireless communications for the connected objects </td></tr><tr><td><a href="#b4">  Deal with semantic data to populate an ontology and enrich information</a></td><td>Course of Semantic data  </td></tr><tr><td><a href="#b5"> Deploy an architecture for connected objects with oneM2M</a></td><td>Course of Architecture of service  </td></tr><tr><td><a href="#b6">Annexes</a></td><td></td></tr></tbody></table></figure>
+
+
+
+<a id="b1"></a>
+<h1 id="b1"></h1>
+
+
+
+<h5><strong>Study of the LoRa protocol</strong> </h5>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:70%">
+<h6><strong>Context</strong></h6>
+
+
+
+<p>For the course on protocols for connected objects I had to realize with Romain Saboret a presentation summarizing a documentary research on the LoRa protocol.</p>
+
+
+
+<h6><strong>Resolution of problem</strong></h6>
+
+
+
+<p>With my partner I had to define the main characteristics of the protocol in order to compare it properly with its competitors. LoRa bases its communication on :</p>
+
+
+
+<ul><li>Emerging communication technology</li><li>Long Range</li><li>Large-scale network coverage</li></ul>
+
+
+
+<p>We have therefore chosen to focus our comparisons on : </p>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<ul><li>Mobility</li><li>Coverage</li><li>Cost </li></ul>
+</div>
+
+
+
+<div class="wp-block-column">
+<ul><li>Consumption </li><li>Data rate </li><li>Number of Devices  </li></ul>
+</div>
+</div>
+
+
+
+<p>The presentation revolves around the physical layer LoRa and LoRaWAN.</p>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:30%">
+<figure class="wp-block-image size-large"><img src="http://www.johan-alberti.com/wp-content/uploads/2020/01/lora.png" alt="" class="wp-image-344" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/lora.png 860w,http://www.johan-alberti.com/wp-content/uploads/2020/01/lora-300x105.png 300w,http://www.johan-alberti.com/wp-content/uploads/2020/01/lora-768x268.png 768w" sizes="(max-width: 860px) 100vw, 860px"></figure>
+
+
+
+<p>Context : Protocols for the connected objects course</p>
+
+
+
+<h6><strong>Solution</strong></h6>
+
+
+
+<p>You can download the presentation here :</p>
+
+
+
+<div class="wp-block-file"><a href="http://www.johan-alberti.com/wp-content/uploads/2020/01/LoRa-Presentation.pdf">LoRa-Presentation</a><a href="http://www.johan-alberti.com/wp-content/uploads/2020/01/LoRa-Presentation.pdf" class="wp-block-file__button" download>Download</a></div>
+</div>
+</div>
+</div></div>
+
+
+
+<a id="b2"></a>
+<h1 id="b2"></h1>
+
+
+
+<h5> <strong>Study of the MAC layers for wireless sensor networks</strong></h5>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:70%">
+<h6><strong>Context</strong></h6>
+
+
+
+<p>For the course on protocols for connected objects I had to realize a personal study on MAC layers used for wireless communication in IoT.</p>
+
+
+
+<h6><strong>Resolution of problem</strong></h6>
+
+
+
+<p>I had difficulty finding information on MAC layers that are not widespread in the scientific literature.</p>
+
+
+
+<p>However, with the help of different publications on the subject I was able to summarize the different demodulation technologies at the MAC level.</p>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:30%">
+<figure class="wp-block-image size-large"><img src="http://www.johan-alberti.com/wp-content/uploads/2020/01/mac.jpg" alt="" class="wp-image-384" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/mac.jpg 814w,http://www.johan-alberti.com/wp-content/uploads/2020/01/mac-300x199.jpg 300w,http://www.johan-alberti.com/wp-content/uploads/2020/01/mac-768x509.jpg 768w" sizes="(max-width: 814px) 100vw, 814px"></figure>
+
+
+
+<p>Context : Protocols for the connected objects course</p>
+
+
+
+<h6><strong>Solution</strong></h6>
+
+
+
+<p>You can download the report here :</p>
+
+
+
+<div class="wp-block-file"><a href="http://www.johan-alberti.com/wp-content/uploads/2020/01/Study-of-the-MAC-Layer-Johan-Alberti.pdf">Study-of-the-MAC-Layer-Report</a><a href="http://www.johan-alberti.com/wp-content/uploads/2020/01/Study-of-the-MAC-Layer-Johan-Alberti.pdf" class="wp-block-file__button" download>Download</a></div>
+</div>
+</div>
+</div></div>
+
+
+
+<a id="b3"></a>
+<h1 id="b3"></h1>
+
+
+
+<h5><strong>Introduction to Software-Defined-Radio (GNU Radio)</strong></h5>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:70%">
+<h6><strong>Context</strong></h6>
+
+
+
+<p>During this team project, I focused on the reception of real communication signals (e.g. broadcasting, aeronautical communications, etc.). Thus a specific part of the wide frequency range of radio spectrum is allocated to each signal with regards to the targeted applications and constraints. </p>
+
+
+
+<h6><strong>Resolution of problem</strong></h6>
+
+
+
+<p>Firstly, in this report, we demonstrate that, in the case of narrowband signals, the IQ transceivers (In-phase/Quadrature) allow transmissions with frequency transportation without altering data. Secondly, we report our work on FM broadcasting, where our aim was to demodulate it in real time. Thirdly, the VOLMET AM broadcasting have been treated, again in real time. </p>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:30%">
+<figure class="wp-block-image size-large"><img src="http://www.johan-alberti.com/wp-content/uploads/2020/01/sdr.jpg" alt="" class="wp-image-387" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/sdr.jpg 889w,http://www.johan-alberti.com/wp-content/uploads/2020/01/sdr-300x140.jpg 300w,http://www.johan-alberti.com/wp-content/uploads/2020/01/sdr-768x359.jpg 768w" sizes="(max-width: 889px) 100vw, 889px"></figure>
+
+
+
+<p>Context : Protocols for the connected objects course</p>
+
+
+
+<h6><strong>Solution</strong></h6>
+
+
+
+<p>You can download the report here :</p>
+
+
+
+<div class="wp-block-file"><a href="http://www.johan-alberti.com/wp-content/uploads/2020/01/SDR_Report-Alberti_Sabort_Taillardat-1.pdf">SDR Report</a><a href="http://www.johan-alberti.com/wp-content/uploads/2020/01/SDR_Report-Alberti_Sabort_Taillardat-1.pdf" class="wp-block-file__button" download>Download</a></div>
+</div>
+</div>
+</div></div>
+
+
+
+<a id="b4"></a>
+<h1 id="b4"></h1>
+
+
+
+<h5> <strong>Deal with semantic data to populate an ontology and enrich information </strong></h5>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-block-columns">
+<div class="wp-block-column" style="flex-basis:70%">
+<h6><strong>Context</strong></h6>
+
+
+
+<p>This project is an introduction to Web semantics. By using the Protected tool, we were able to create an ontology that corresponds to the way we structure our data. </p>
+
+
+
+<h6><strong>Resolution of problem</strong></h6>
+
+
+
+<p> We were then able to populate this ontology with various examples and  thanks to the software’s reasoning, we were able to uncover  inconsistencies between our examples and the chosen structure.<br> This ontology was then tested with a temperature dataset on a city in Denmark. </p>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:30%">
+<figure class="wp-block-image size-large"><img src="http://www.johan-alberti.com/wp-content/uploads/2020/01/semantic-1024x1024.png" alt="" class="wp-image-396" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/semantic-1024x1024.png 1024w,http://www.johan-alberti.com/wp-content/uploads/2020/01/semantic-300x300.png 300w,http://www.johan-alberti.com/wp-content/uploads/2020/01/semantic-150x150.png 150w,http://www.johan-alberti.com/wp-content/uploads/2020/01/semantic-768x768.png 768w,http://www.johan-alberti.com/wp-content/uploads/2020/01/semantic-1536x1536.png 1536w,http://www.johan-alberti.com/wp-content/uploads/2020/01/semantic.png 2000w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+
+
+
+<p>Context : Protocols for the connected objects course</p>
+
+
+
+<h6><strong>Solution</strong></h6>
+
+
+
+<p>You can download the report here :</p>
+
+
+
+<div class="wp-block-file"><a href="http://www.johan-alberti.com/wp-content/uploads/2020/01/Rapport_de_Web_s_mantique1.pdf">Rapport8de_Web_s_mantique1</a><a href="http://www.johan-alberti.com/wp-content/uploads/2020/01/Rapport_de_Web_s_mantique1.pdf" class="wp-block-file__button" download>Download (french)</a></div>
+</div>
+</div>
+</div></div>
+
+
+
+<a id="b5"></a>
+<h1 id="b5"></h1>
+
+
+
+<h5><strong>Deploy an architecture for connected objects with oneM2M</strong></h5>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<h6> Table of Contents </h6>
+
+
+
+<p> <a href="#post-78-_Toc25494429">1. Know how to position the main standards of the Internet of Things 4</a><br><a href="#post-78-_Toc25494430">2. Deploy a standard-compliant architecture and set up a sensor network system for services 4</a><br>  <a href="#post-78-_Toc25494430"> 2.1. Deploying and configuring an IoT architecture using OM2M 4</a><br>   <a href="#post-78-_Toc25494430">2.2 Interacting with objects using a REST 6 architecture</a><br>   <a href="#post-78-_Toc25494430">2.3 Integrating new/other technology into an IoT 6 architecture</a><br><a href="#post-78-_Toc25494430">3. Deploy a composite application between various technologies using NODE-RED based on a standardized middleware 7</a><br><a href="#post-78-_Toc25494435">Sources</a> </p>
+</div></div>
+</div>
+
+
+
+<div class="wp-block-column">
+<figure class="wp-block-image size-large"><img src="http://www.johan-alberti.com/wp-content/uploads/2020/01/om2m-1024x509.jpg" alt="" class="wp-image-376" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/om2m-1024x509.jpg 1024w,http://www.johan-alberti.com/wp-content/uploads/2020/01/om2m-300x149.jpg 300w,http://www.johan-alberti.com/wp-content/uploads/2020/01/om2m-768x382.jpg 768w,http://www.johan-alberti.com/wp-content/uploads/2020/01/om2m.jpg 1048w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+</div>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<p></p>
+<h6>1. Know how to position the main standards of the Internet of Things</h6>
+<p>Most standards (Auto-ID Labs, FDA…) are limited to specific uses, e.g. FDA allows the identification of medical components. It is therefore necessary to define an open and deployable standard for all connected objects.</p>
+<p>The oneM2M standard is a project founded in 2013 by various standardization bodies specialized in information and communication technologies (ARIB, ATIS, ETSI, etc.) [2]. It is positioned as an open standard for horizontal platforms. Its structure is composed of an application layer, a service layer and a network layer, which allows for a high level of interoperability. Thus, it is useful for many IoT applications (connected houses, smart cities, transport, health…) [3].</p>
+<p>Other standards such as IIC (Industrial Internet Consortium), which focuses rather on the industrial aspect of IoT and appeared after oneM2M but offers a complete architecture with interoperability in many industrial domains (Industry 4.0).</p>
+<h6>2. Deploy a standard-compliant architecture and set up a sensor network system for services</h6>
+<p><strong>2.1. Deploying and configuring an IoT architecture using OM2M</strong></p>
+<p>The project aims at deploying an IoT architecture on a Phillips HUE lamp using the oneM2M architecture thanks to OM2M eclipse. The lamp communicates to a gateway using ZigBee technology.</p>
+<p>The objective is to provide an API following the REST architecture to the gateway. It is then necessary to create an inter functional proxy entity allowing the connection between the HUE gateway and oneM2M.</p>
+<p></p>
+<p><img class="wp-image-351" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image.jpeg" width="343" height="131" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image.jpeg 698w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-300x114.jpeg 300w" sizes="(max-width: 343px) 100vw, 343px"></p>
+<p><em>Figure 2 – Interacting Elements</em></p>
+<p>If we translate all of the above into the oneM2M standard, we obtain an architecture based on 3 different nodes linking the interacting entities:</p>
+<ul>
+<li>An Infrastructure Node (IN): the OM2M server / router 192.168.X.1</li>
+<li>A Middle Node (MN): the HUE Bridge gateway</li>
+<li>A Dedicated Node (DNA) Application: the Phillips HUE lamp</li>
+</ul>
+<p>The lamp is controlled through a Dashboard type user interface that allows to communicate with OM2M and also to receive its status (brightness, state and hue).</p>
+<p></p>
+<p><img class="wp-image-352" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-1.jpeg" width="345" height="194" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-1.jpeg 1280w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-1-300x169.jpeg 300w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-1-1024x576.jpeg 1024w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-1-768x432.jpeg 768w" sizes="(max-width: 345px) 100vw, 345px"></p>
+<p><em>Figure 3 – Architecture to be deployed</em></p>
+<p>So we end up with an application layer that includes the lamp, the HUE Bridge gateway and the router. The services are provided by the mn-cse and the in-cse. Finally, the transport layer intervenes between the User Interface and OM2M through a REST API.</p>
+<p><strong>2.2 Interacting with objects using a REST architecture</strong></p>
+<p>To interact with the connected objects, oneM2M resources must be used. After creating the AE corresponding to our LAMP_1, we placed a CNT (container) of type DATA. When the lamp changes state, the REST API sends an HTTP POST request and creates a new CIN within the DATA CNT, which contains the new lamp data.</p>
+<p><img class="wp-image-353" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image.png" width="255" height="102" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image.png 447w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-300x120.png 300w" sizes="(max-width: 255px) 100vw, 255px"></p>
+<p><em>Figure 4 – Structure of an AE in OM2M</em></p>
+<p>By performing a SUB (subscription) within the CNT DATA, the user can be notified as soon as a new CIN is received. Thus, by specifying an access point (poa) designating a server (local in our case), we send to the user the status of the lamp.</p>
+<p>In the same way, the user can control the lamp by posting a CIN with the values of his choice through an HTTP POST request via the REST API.</p>
+<p></p>
+<p><strong>2.3 Integrating new/other technology into an IoT architecture</strong></p>
+<p>The principle of Interworking Proxy Entity of oneM2M is, by means of an SDK, to make it possible to access values from Philips devices and to monitor them directly from OM2M.</p>
+<p>Philips provides a complete SDK allowing local control of the lamp (from the HUE Bridge gateway). We had to adapt our OM2M so that it can receive and send the information in the right format to the lamp.</p>
+<p>To do so, we had to translate between the OM2M HTTP request and the functions provided by the corresponding SDK to access the lamp and retrieve its status.</p>
+<p></p>
+<h6>3. Deploy a composite application between various technologies using NODE-RED based on a standardised middleware</h6>
+<p>Node-RED is a graphical development tool dedicated to interconnect hardware with APIs and online services. The editor is entirely web-based and is used to create javascript functions in the form of nodes in order to link them together to form flows.</p>
+<table style="height: 316px;" width="557">
+<tbody>
+<tr>
+<td>
+<p>Node-RED provides advantages for not building interconnections yourself using nodes created by other users that can be available to all. Thus, a library of basic nodes is provided at node-RED startup. Likewise, graphically as well as in command lines, it is easily possible to include other nodes like those of OM2M.</p>
+<p>We can thus easily create different objects in OM2M like AEs, containers or content instances.</p>
+</td>
+<td>
+<p><a id="post-78-_Toc25494995"></a><em>Figure 5 – Node RED : OM2M</em></p>
+<p><img class="wp-image-354" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-1.png" width="48" height="107" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-1.png 151w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-1-135x300.png 135w" sizes="(max-width: 48px) 100vw, 48px"><img class="wp-image-355" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-2.png" width="44" height="86"></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>Figure 6 – Node RED : Initialization and  « get state »</em></p>
+<p><img class="wp-image-356" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-3.png" width="346" height="119" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-3.png 637w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-3-300x103.png 300w" sizes="(max-width: 346px) 100vw, 346px"> <img class="wp-image-357" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-4.png" width="344" height="87" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-4.png 612w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-4-300x76.png 300w" sizes="(max-width: 344px) 100vw, 344px"></p>
+<p>The REST application allows to send to the OM2M server the values of the Philips Hue lamp such as brightness, state or hue. With node-RED and OM2M nodes, we can retrieve this information and display it in a debug window, or even in html thanks to the mustache template allowing to switch from JSON input to html. Another possibility is to use another library to directly create a dashboard.</p>
+<p><a id="post-78-_Toc25494997"></a><em>Figure 7 – Node RED : Dashboard</em></p>
+<p><img class="wp-image-358" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-5.png" width="310" height="124" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-5.png 468w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-5-300x120.png 300w" sizes="(max-width: 310px) 100vw, 310px"></p>
+<p><img class="wp-image-359" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-6.png" width="54" height="95"> <img class="wp-image-360" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-7.png" width="59" height="100"> <img class="wp-image-361" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-8.png" width="54" height="77"></p>
+<p>We can send commands to the OM2M server and retrieve information from the lamp. We can then create conditions allowing us to change some values of the lamp if it does not follow selected criteria. In this example, we have chosen to look at the state and brightness of the lamp and to increase its brightness if it is too low.</p>
+<p><a id="post-78-_Toc25494998"></a><em>Figure 8 – Node RED : « change state »</em></p>
+<p><img class="wp-image-362" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-9.png" width="274" height="125" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-9.png 608w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-9-300x137.png 300w" sizes="(max-width: 274px) 100vw, 274px"></p>
+<p>By retrieving the time with the timestamp node, it is possible to create an automatic command increasing the lamp after 17:00 if it is too low. Almost all conditions are possible thanks to the function block where scripts can be written to modify the message according to what it contains.</p>
+<p><em>Figure 9 – Node RED : « change state » at 5 pm</em></p>
+<p><img class="wp-image-363" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-10.png" width="270" height="118" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-10.png 615w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-10-300x131.png 300w" sizes="(max-width: 270px) 100vw, 270px"> <img class="wp-image-364" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-11.png" width="279" height="145" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-11.png 473w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-11-300x156.png 300w" sizes="(max-width: 279px) 100vw, 279px"></p>
+<p>It is also possible to create subscriptions and manage requests sent by the OM2M server when new data arrives. By combining these nodes with those seen previously, it is possible to create conditions that are tested at each new state of the lamp and to activate or not a command.</p>
+<p><a id="post-78-_Toc25495000"></a><em>Figure 10 – Node RED : Subscription</em></p>
+<p><img class="wp-image-365" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-12.png" width="280" height="136" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-12.png 610w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-12-300x146.png 300w" sizes="(max-width: 280px) 100vw, 280px"></p>
+<p>Thanks to the nodes of the dashboard library, we were able to connect the OM2M tools seen previously to a visual rendering provided. Inputs and outputs are managed independently, this way, if changes are made by a third party application or by manually changing the lamp status, the dashboard is updated automatically.</p>
+<p><em>Figure 11 – RED Node: Dashboard Update</em></p>
+<p><img class="wp-image-366" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-2.jpeg" width="297" height="75" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-2.jpeg 1075w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-2-300x76.jpeg 300w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-2-1024x258.jpeg 1024w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-2-768x194.jpeg 768w" sizes="(max-width: 297px) 100vw, 297px"> <img class="wp-image-367" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-3.jpeg" width="191" height="97" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-3.jpeg 638w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-3-300x152.jpeg 300w" sizes="(max-width: 191px) 100vw, 191px"></p>
+<p><em>Figure 12 – UI from a browser</em></p>
+<p><img class="wp-image-368" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-4.jpeg" width="251" height="114" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-4.jpeg 1105w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-4-300x137.jpeg 300w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-4-1024x466.jpeg 1024w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-4-768x350.jpeg 768w" sizes="(max-width: 251px) 100vw, 251px"> <img class="wp-image-369" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-5.jpeg" width="131" height="120" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-5.jpeg 543w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-5-300x274.jpeg 300w" sizes="(max-width: 131px) 100vw, 131px"></p>
+<table>
+<tbody>
+<tr>
+<td>
+<p>The dashboard then adapts to all screen formats. We can now access the dashboard’s corresponding web page with a mobile phone, where it is now possible to view the status and characteristics of the lamp, and to change these values simply.</p>
+<p>By publishing the OM2M server and node-RED on the internet and having an internet connection for sending and receiving lamp data, it is possible to change the status of the lamp or view its values from anywhere in the world.</p>
+</td>
+<td>
+<p><img class="wp-image-370" src="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-6.jpeg" width="44" height="93" srcset="http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-6.jpeg 270w,http://www.johan-alberti.com/wp-content/uploads/2020/01/word-image-6-142x300.jpeg 142w" sizes="(max-width: 44px) 100vw, 44px"></p>
+<p><em>Figure 13 – UI from a smartphone</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h6><a id="post-78-_Toc25494435"></a>Sources :</h6>
+<p>[1] :  <a href="https://lejournal.cnrs.fr/articles/les-defis-de-linternet-des-objets">https://lejournal.cnrs.fr/articles/les-defis-de-linternet-des-objets</a></p>
+<p>[2] : <a href="http://www.onem2m.org/">http://www.onem2m.org/</a></p>
+<p>[3] : <a href="https://openclassrooms.com/fr/courses/5079046-mettez-en-place-une-architecture-pour-objets-connectes-avec-le-standard-onem2m/5079156-retrouvez-vous-dans-la-jungle-des-standards">https://openclassrooms.com/fr/courses/5079046-mettez-en-place-une-architecture-pour-objets-connectes-avec-le-standard-onem2m/5079156-retrouvez-vous-dans-la-jungle-des-standards</a></p>
+</div></div>
+
+
+
+<a id="b6"></a>
+<h1 id="b6"></h1>
+
+
+
+<h5><strong>Annexes</strong></h5>
+
+
+
+<p>Here are others projects i was involved in :</p>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<div class="wp-block-file"><a href="http://www.johan-alberti.com/wp-content/uploads/2020/01/Wireless_communication-Energy-harvesting-project.pdf">Wireless communication-Energy harvesting project</a><a href="http://www.johan-alberti.com/wp-content/uploads/2020/01/Wireless_communication-Energy-harvesting-project.pdf" class="wp-block-file__button" download>Download</a></div>
+</div>
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-file"><a href="http://www.johan-alberti.com/wp-content/uploads/2020/01/ilovepdf_merged_compressed.pdf">Cloud Computing Report</a><a href="http://www.johan-alberti.com/wp-content/uploads/2020/01/ilovepdf_merged_compressed.pdf" class="wp-block-file__button" download>Télécharger</a></div>
+</div>
+</div>
+	</div>
+
+	<footer class="entry-footer">
+			</footer>
+</article>
+            </main>
+        </div>
+
+    </div>
+</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		
+        	<div class=" site-info">
+		<div class="container">
+			<div class="site-copyright">
+				Copyright © © 2020. Tous droits réservés.			</div>
+			<div class="theme-info">
+				<a href="https://www.famethemes.com/themes/screenr">Screenr parallax theme</a> par FameThemes			</div>
+		</div>
+	</div>
+	
+	</footer>
+</div>
+
+<script type="text/javascript" src="http://www.johan-alberti.com/wp-content/themes/screenr/assets/js/plugins.js"></script>
+<script type="text/javascript" src="http://www.johan-alberti.com/wp-content/themes/screenr/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var Screenr = {"ajax_url":"http:\/\/www.johan-alberti.com\/wp-admin\/admin-ajax.php","full_screen_slider":"","header_layout":"transparent","slider_parallax":"1","is_home_front_page":"0","autoplay":"7000","speed":"700","effect":"slide","gallery_enable":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.johan-alberti.com/wp-content/themes/screenr/assets/js/theme.js"></script>
+			<script type="text/javascript">
+				jQuery.noConflict();
+				(function( $ ) {
+					$(function() {
+						// More code using $ as alias to jQuery
+						$("area[href*=\\#],a[href*=\\#]:not([href=\\#]):not([href^='\\#tab']):not([href^='\\#quicktab']):not([href^='\\#pane'])").click(function() {
+							if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+								var target = $(this.hash);
+								target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+								if (target.length) {
+								$('html,body').animate({
+								scrollTop: target.offset().top - 20  
+								},500 ,'easeInQuad');
+								return false;
+								}
+							}
+						});
+					});
+				})(jQuery);	
+			</script>				
+				
+</body>
+</html>
